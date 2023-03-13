@@ -11,3 +11,7 @@ Based on [Docker 101](https://harald-u.github.io/docker-101/) which in turn is b
 This workshop is published with Github Pages here:
 
 [https://harald-u.github.io/kubernetes-handson/](https://harald-u.github.io/kubernetes-handson/)
+
+this command is important in patching the load balancer in argocd
+
+kubectl patch svc argocd-server -n argocd -p '{\"spec\": {\"type\": \"LoadBalancer\"}}'
